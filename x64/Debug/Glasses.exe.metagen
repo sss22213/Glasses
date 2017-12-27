@@ -1,0 +1,34 @@
+  Glasses.MyForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly Glasses, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Glasses.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Single count : Public
+    Int32 Trig_count : Public
+    System.Windows.Forms.Button button2 : Public
+    cv.VideoCapture* Ocapture : Public
+    Mywebcam.webcam* Webcam : Public
+    MyPicture.Picture* Color_background : Public
+    MyPicture.Picture* P2 : Public
+    MyPicture.Picture* P3 : Public
+    MyPicture.Picture* P4 : Public
+    MyPicture.Picture* P5 : Public
+    MyPicture.Picture* P6 : Public
+    MyPicture.view* View1 : Public
+    MyPicture.MyPictureBox* Box1 : Public
+    cv.Point_<int>* pps : Public

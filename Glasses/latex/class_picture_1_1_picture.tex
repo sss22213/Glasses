@@ -1,0 +1,299 @@
+\hypertarget{class_picture_1_1_picture}{}\section{Picture\+:\+:Picture Class Reference}
+\label{class_picture_1_1_picture}\index{Picture\+::\+Picture@{Picture\+::\+Picture}}
+
+
+Loading, setting and get picture information.  
+
+
+
+
+{\ttfamily \#include $<$Picture.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_picture_1_1_picture_a165669e49c6744c9530e376ccc21bc09}{Picture} (Mat Input\+Mat, int \hyperlink{class_picture_1_1_picture_a96f8b585779e75511229adf4052fcb1c}{ID})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_picture_1_1_picture}{Picture} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_picture_1_1_picture_aa44b84f379d837a26bd23ba8ef7c59a6}{Picture} (Mat Input\+Mat, int \hyperlink{class_picture_1_1_picture_a96f8b585779e75511229adf4052fcb1c}{ID}, int \hyperlink{group___the_gabc618c40aa01ec5878903a3170e1867a}{position\+\_\+x}, int \hyperlink{group___the_gaad6be8d081af96530b6de3094b979af9}{position\+\_\+y})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_picture_1_1_picture}{Picture} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_picture_1_1_picture_a4214dbada4ee78f67661b249667cc304}{Picture} (string \hyperlink{class_picture_1_1_picture_aa2a2802fbbad4a814012250c6dd1aa16}{Path}, int \hyperlink{class_picture_1_1_picture_a96f8b585779e75511229adf4052fcb1c}{ID}, int \hyperlink{group___the_gabc618c40aa01ec5878903a3170e1867a}{position\+\_\+x}, int \hyperlink{group___the_gaad6be8d081af96530b6de3094b979af9}{position\+\_\+y})
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_picture_1_1_picture}{Picture} Constructor. \end{DoxyCompactList}\item 
+H\+R\+E\+S\+U\+LT \hyperlink{class_picture_1_1_picture_a5e5b20e0f0c261e3338ec23bc7c58252}{Picture\+\_\+\+Load} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_picture_1_1_picture}{Picture} Load. \end{DoxyCompactList}\item 
+H\+R\+E\+S\+U\+LT \hyperlink{class_picture_1_1_picture_aef9d41f3c409a2c3cf804ee51222ec8b}{Add\+\_\+\+Position} (int \hyperlink{group___the_gabc618c40aa01ec5878903a3170e1867a}{position\+\_\+x}, int \hyperlink{group___the_gaad6be8d081af96530b6de3094b979af9}{position\+\_\+y})
+\begin{DoxyCompactList}\small\item\em Change position of picture. \end{DoxyCompactList}\item 
+H\+R\+E\+S\+U\+LT \hyperlink{class_picture_1_1_picture_ac9fa647455f925a5a429d37448cdb4bd}{Change\+\_\+\+Mat} (Mat Input\+Mat)
+\begin{DoxyCompactList}\small\item\em Change image of picture. \end{DoxyCompactList}\item 
+H\+R\+E\+S\+U\+LT \hyperlink{class_picture_1_1_picture_a08dde05c39be67ec6d6c279314356e07}{Show\+\_\+\+Picture} (const string \&window\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Display image using opencv window. \end{DoxyCompactList}\item 
+H\+R\+E\+S\+U\+LT \hyperlink{class_picture_1_1_picture_a4044830d730f7c5f2039652f830b1bbb}{Picture\+\_\+resize} (int x=0, int y=0, float fx=1.\+5, float fy=1.\+5)
+\begin{DoxyCompactList}\small\item\em Resize image. \end{DoxyCompactList}\item 
+int \hyperlink{class_picture_1_1_picture_a827efae2ce4832dbbdc8877ac3c175b8}{Get\+\_\+\+Pos\+\_\+X} ()
+\begin{DoxyCompactList}\small\item\em Get position of image. \end{DoxyCompactList}\item 
+int \hyperlink{class_picture_1_1_picture_a370ddd3fba418dbaeac72f649feec7a7}{Get\+\_\+\+Pos\+\_\+Y} ()
+\begin{DoxyCompactList}\small\item\em Get position of image. \end{DoxyCompactList}\item 
+Mat \hyperlink{class_picture_1_1_picture_a44b9bb7df596902509eb8fb41c24d38e}{Get\+\_\+image} ()
+\begin{DoxyCompactList}\small\item\em Get image. \end{DoxyCompactList}\item 
+int \hyperlink{class_picture_1_1_picture_af68efed56a47aecb9ccf5c2b505af2f2}{Get\+\_\+\+ID} ()
+\begin{DoxyCompactList}\small\item\em Get ID of picture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___the_gabc618c40aa01ec5878903a3170e1867a}{position\+\_\+x}
+\begin{DoxyCompactList}\small\item\em The coordinate of the X-\/axis at the start of the picture. \end{DoxyCompactList}\item 
+int \hyperlink{group___the_gaad6be8d081af96530b6de3094b979af9}{position\+\_\+y}
+\begin{DoxyCompactList}\small\item\em The coordinate of the Y-\/axis at the start of the picture. \end{DoxyCompactList}\item 
+int \hyperlink{group__picture_ga62b9b579f0edd39a986aa614a6d51536}{pic\+\_\+boarder\+\_\+x} \mbox{[}2\mbox{]}\mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em The coordinate of the X-\/axis at the picture border. \end{DoxyCompactList}\item 
+int \hyperlink{group__picture_gaef6baa8934f351d974d75a43834c7738}{pic\+\_\+boarder\+\_\+y} \mbox{[}2\mbox{]}\mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em The coordinate of the Y-\/axis at the picture border. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_picture_1_1_picture_a96f8b585779e75511229adf4052fcb1c}{ID}
+\item 
+string \hyperlink{class_picture_1_1_picture_aa2a2802fbbad4a814012250c6dd1aa16}{Path}
+\item 
+Mat \hyperlink{class_picture_1_1_picture_a8e9f7ddce764bd0cb7be9250ea5b70a3}{image}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loading, setting and get picture information. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_picture_1_1_picture_a165669e49c6744c9530e376ccc21bc09}\label{class_picture_1_1_picture_a165669e49c6744c9530e376ccc21bc09}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Picture@{Picture}}
+\index{Picture@{Picture}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Picture()}{Picture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Picture\+::\+Picture\+::\+Picture (\begin{DoxyParamCaption}\item[{Mat}]{Input\+Mat,  }\item[{int}]{ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\hyperlink{class_picture_1_1_picture}{Picture} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Input\+Mat} & Input of picture \\
+\hline
+{\em ID} & ID of picture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_picture_1_1_picture_aa44b84f379d837a26bd23ba8ef7c59a6}\label{class_picture_1_1_picture_aa44b84f379d837a26bd23ba8ef7c59a6}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Picture@{Picture}}
+\index{Picture@{Picture}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Picture()}{Picture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Picture\+::\+Picture\+::\+Picture (\begin{DoxyParamCaption}\item[{Mat}]{Input\+Mat,  }\item[{int}]{ID,  }\item[{int}]{position\+\_\+x,  }\item[{int}]{position\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\hyperlink{class_picture_1_1_picture}{Picture} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Input\+Mat} & Input of picture \\
+\hline
+{\em ID} & ID of picture \\
+\hline
+{\em position\+\_\+x} & The coordinate of the X-\/axis at the start of the picture \\
+\hline
+{\em position\+\_\+y} & The coordinate of the Y-\/axis at the start of the picture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_picture_1_1_picture_a4214dbada4ee78f67661b249667cc304}\label{class_picture_1_1_picture_a4214dbada4ee78f67661b249667cc304}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Picture@{Picture}}
+\index{Picture@{Picture}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Picture()}{Picture()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Picture\+::\+Picture\+::\+Picture (\begin{DoxyParamCaption}\item[{string}]{Path,  }\item[{int}]{ID,  }\item[{int}]{position\+\_\+x,  }\item[{int}]{position\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\hyperlink{class_picture_1_1_picture}{Picture} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Path} & Path of picture \\
+\hline
+{\em ID} & ID of picture \\
+\hline
+{\em position\+\_\+x} & The coordinate of the X-\/axis at the start of the picture \\
+\hline
+{\em position\+\_\+y} & The coordinate of the Y-\/axis at the start of the picture \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_picture_1_1_picture_aef9d41f3c409a2c3cf804ee51222ec8b}\label{class_picture_1_1_picture_aef9d41f3c409a2c3cf804ee51222ec8b}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Add\+\_\+\+Position@{Add\+\_\+\+Position}}
+\index{Add\+\_\+\+Position@{Add\+\_\+\+Position}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Add\+\_\+\+Position()}{Add\_Position()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Picture\+::\+Picture\+::\+Add\+\_\+\+Position (\begin{DoxyParamCaption}\item[{int}]{position\+\_\+x,  }\item[{int}]{position\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Change position of picture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position\+\_\+x} & The coordinate of the X-\/axis \\
+\hline
+{\em position\+\_\+y} & The coordinate of the Y-\/axis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+\_\+\+OK\+: Loaded successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_picture_1_1_picture_ac9fa647455f925a5a429d37448cdb4bd}\label{class_picture_1_1_picture_ac9fa647455f925a5a429d37448cdb4bd}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Change\+\_\+\+Mat@{Change\+\_\+\+Mat}}
+\index{Change\+\_\+\+Mat@{Change\+\_\+\+Mat}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Change\+\_\+\+Mat()}{Change\_Mat()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Picture\+::\+Picture\+::\+Change\+\_\+\+Mat (\begin{DoxyParamCaption}\item[{Mat}]{Input\+Mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Change image of picture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Input\+Mat} & image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+\_\+\+OK\+: Loaded successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_picture_1_1_picture_af68efed56a47aecb9ccf5c2b505af2f2}\label{class_picture_1_1_picture_af68efed56a47aecb9ccf5c2b505af2f2}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Get\+\_\+\+ID@{Get\+\_\+\+ID}}
+\index{Get\+\_\+\+ID@{Get\+\_\+\+ID}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Get\+\_\+\+I\+D()}{Get\_ID()}}
+{\footnotesize\ttfamily int Picture\+::\+Picture\+::\+Get\+\_\+\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get ID of picture. 
+
+\begin{DoxyReturn}{Returns}
+ID of picture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_picture_1_1_picture_a44b9bb7df596902509eb8fb41c24d38e}\label{class_picture_1_1_picture_a44b9bb7df596902509eb8fb41c24d38e}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Get\+\_\+image@{Get\+\_\+image}}
+\index{Get\+\_\+image@{Get\+\_\+image}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Get\+\_\+image()}{Get\_image()}}
+{\footnotesize\ttfamily Mat Picture\+::\+Picture\+::\+Get\+\_\+image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get image. 
+
+\begin{DoxyReturn}{Returns}
+image 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_picture_1_1_picture_a827efae2ce4832dbbdc8877ac3c175b8}\label{class_picture_1_1_picture_a827efae2ce4832dbbdc8877ac3c175b8}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Get\+\_\+\+Pos\+\_\+X@{Get\+\_\+\+Pos\+\_\+X}}
+\index{Get\+\_\+\+Pos\+\_\+X@{Get\+\_\+\+Pos\+\_\+X}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Get\+\_\+\+Pos\+\_\+\+X()}{Get\_Pos\_X()}}
+{\footnotesize\ttfamily int Picture\+::\+Picture\+::\+Get\+\_\+\+Pos\+\_\+X (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get position of image. 
+
+\begin{DoxyReturn}{Returns}
+X coordinate of the upper left 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_picture_1_1_picture_a370ddd3fba418dbaeac72f649feec7a7}\label{class_picture_1_1_picture_a370ddd3fba418dbaeac72f649feec7a7}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Get\+\_\+\+Pos\+\_\+Y@{Get\+\_\+\+Pos\+\_\+Y}}
+\index{Get\+\_\+\+Pos\+\_\+Y@{Get\+\_\+\+Pos\+\_\+Y}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Get\+\_\+\+Pos\+\_\+\+Y()}{Get\_Pos\_Y()}}
+{\footnotesize\ttfamily int Picture\+::\+Picture\+::\+Get\+\_\+\+Pos\+\_\+Y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get position of image. 
+
+\begin{DoxyReturn}{Returns}
+Y coordinate of the upper left 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_picture_1_1_picture_a5e5b20e0f0c261e3338ec23bc7c58252}\label{class_picture_1_1_picture_a5e5b20e0f0c261e3338ec23bc7c58252}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Picture\+\_\+\+Load@{Picture\+\_\+\+Load}}
+\index{Picture\+\_\+\+Load@{Picture\+\_\+\+Load}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Picture\+\_\+\+Load()}{Picture\_Load()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Picture\+::\+Picture\+::\+Picture\+\_\+\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\hyperlink{class_picture_1_1_picture}{Picture} Load. 
+
+\begin{DoxyReturn}{Returns}
+S\+\_\+\+OK\+: Loaded successfully 
+
+E\+\_\+\+N\+O\+T\+I\+MP\+: ID is not illegal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_picture_1_1_picture_a4044830d730f7c5f2039652f830b1bbb}\label{class_picture_1_1_picture_a4044830d730f7c5f2039652f830b1bbb}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Picture\+\_\+resize@{Picture\+\_\+resize}}
+\index{Picture\+\_\+resize@{Picture\+\_\+resize}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Picture\+\_\+resize()}{Picture\_resize()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Picture\+::\+Picture\+::\+Picture\+\_\+resize (\begin{DoxyParamCaption}\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0},  }\item[{float}]{fx = {\ttfamily 1.5},  }\item[{float}]{fy = {\ttfamily 1.5} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resize image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The horizontal of the output \\
+\hline
+{\em y} & The vertical size of the output \\
+\hline
+{\em fx} & Output of the horizontal magnification \\
+\hline
+{\em fy} & Output of the vertical magnification \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+\_\+\+OK\+: Loaded successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_picture_1_1_picture_a08dde05c39be67ec6d6c279314356e07}\label{class_picture_1_1_picture_a08dde05c39be67ec6d6c279314356e07}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Show\+\_\+\+Picture@{Show\+\_\+\+Picture}}
+\index{Show\+\_\+\+Picture@{Show\+\_\+\+Picture}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Show\+\_\+\+Picture()}{Show\_Picture()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT Picture\+::\+Picture\+::\+Show\+\_\+\+Picture (\begin{DoxyParamCaption}\item[{const string \&}]{window\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Display image using opencv window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+\_\+name} & Window name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+\_\+\+OK\+: Loaded successfully 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_picture_1_1_picture_a96f8b585779e75511229adf4052fcb1c}\label{class_picture_1_1_picture_a96f8b585779e75511229adf4052fcb1c}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!ID@{ID}}
+\index{ID@{ID}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily int Picture\+::\+Picture\+::\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+ID of picture \mbox{\Hypertarget{class_picture_1_1_picture_a8e9f7ddce764bd0cb7be9250ea5b70a3}\label{class_picture_1_1_picture_a8e9f7ddce764bd0cb7be9250ea5b70a3}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!image@{image}}
+\index{image@{image}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily Mat Picture\+::\+Picture\+::image\hspace{0.3cm}{\ttfamily [private]}}
+
+Image \mbox{\Hypertarget{class_picture_1_1_picture_aa2a2802fbbad4a814012250c6dd1aa16}\label{class_picture_1_1_picture_aa2a2802fbbad4a814012250c6dd1aa16}} 
+\index{Picture\+::\+Picture@{Picture\+::\+Picture}!Path@{Path}}
+\index{Path@{Path}!Picture\+::\+Picture@{Picture\+::\+Picture}}
+\subsubsection{\texorpdfstring{Path}{Path}}
+{\footnotesize\ttfamily string Picture\+::\+Picture\+::\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+Path of picture 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Picture.\+h\end{DoxyCompactItemize}

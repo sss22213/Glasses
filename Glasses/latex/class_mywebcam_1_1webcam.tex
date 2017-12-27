@@ -1,0 +1,289 @@
+\hypertarget{class_mywebcam_1_1webcam}{}\section{Mywebcam\+:\+:webcam Class Reference}
+\label{class_mywebcam_1_1webcam}\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+
+
+Provide webcam function.  
+
+
+
+
+{\ttfamily \#include $<$core.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mywebcam_1_1webcam_a90ece1aab671095ee01fa9c34fa4dbd7}{webcam} (Video\+Capture Ocapture, int W\+I\+D\+TH, int H\+E\+I\+G\+HT, int F\+PS)
+\begin{DoxyCompactList}\small\item\em webcam Constructor \end{DoxyCompactList}\item 
+int \hyperlink{class_mywebcam_1_1webcam_a331edce2952af5995420c1ace205317c}{webcam\+\_\+\+Trig\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em Catch background picture into Parent\+\_\+frame. \end{DoxyCompactList}\item 
+U\+Mat \hyperlink{class_mywebcam_1_1webcam_a7a99d6f538b377e7af7021180bdfaef2}{Catch\+\_\+image} ()
+\begin{DoxyCompactList}\small\item\em Get image from webcam. \end{DoxyCompactList}\item 
+int \hyperlink{class_mywebcam_1_1webcam_a64834e308d75f64bcb4b833d415782d2}{Trig\+\_\+\+Create} (int O\+Trig\+\_\+X, int O\+Trig\+\_\+Y, int O\+Trig\+\_\+regX, int O\+Trig\+\_\+regY, int prior1)
+\begin{DoxyCompactList}\small\item\em Create Trig point. \end{DoxyCompactList}\item 
+int \hyperlink{class_mywebcam_1_1webcam_a7e205a9aa849cab1cb47513cdd46a02b}{Trig\+\_\+param} (int o\+Trig\+\_\+\+Percent)
+\begin{DoxyCompactList}\small\item\em Trig param try. \end{DoxyCompactList}\item 
+int \hyperlink{class_mywebcam_1_1webcam_a2b213536b45a13d4abd8d34b0c19535c}{Trig\+\_\+\+Del} (int prior1)
+\begin{DoxyCompactList}\small\item\em Delete Trig point. \end{DoxyCompactList}\item 
+int \hyperlink{class_mywebcam_1_1webcam_a64f03adb86a05d550cf238c8beb22b1e}{Trig\+\_\+\+Restore} (int prior1)
+\begin{DoxyCompactList}\small\item\em Restore Trig point. \end{DoxyCompactList}\item 
+int \hyperlink{class_mywebcam_1_1webcam_a0cde3310fc2cc39b390816a7d95a6cb5}{Trig\+\_\+hide} (int prior1)
+\begin{DoxyCompactList}\small\item\em Hide Trig point. \end{DoxyCompactList}\item 
+int \hyperlink{class_mywebcam_1_1webcam_a8c3bece8802fa58e8de968bc65a36fd1}{Trig\+\_\+func} (cv\+::\+Point left\+\_\+top, cv\+::\+Point right\+\_\+down)
+\begin{DoxyCompactList}\small\item\em Trig function using background subtraction. \end{DoxyCompactList}\item 
+int \hyperlink{class_mywebcam_1_1webcam_aa47dab3d4fb51217bd09150adedbfc27}{Trig\+\_\+func} ()
+\begin{DoxyCompactList}\small\item\em Trig function using background subtraction. \end{DoxyCompactList}\item 
+int \hyperlink{class_mywebcam_1_1webcam_a66af4250efce2c454bcd9dee3a268f47}{Trig\+\_\+func1} ()
+\begin{DoxyCompactList}\small\item\em Trig function using color condition. \end{DoxyCompactList}\item 
+int \hyperlink{class_mywebcam_1_1webcam_a243224bf66ec95731a81bffc52fc00c3}{Trig\+\_\+\+Color} (cv\+::\+Point left\+\_\+top, cv\+::\+Point right\+\_\+down)
+\begin{DoxyCompactList}\small\item\em Trig function using color condition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group___the_ga0cfdf469ae302c1ee567a95e76278e34}{Trig\+\_\+X} \mbox{[}\hyperlink{group___the_ga3572c6451d34aaf557cfb88ee365cf16}{Trig\+\_\+num}\mbox{]}
+\begin{DoxyCompactList}\small\item\em The coordinate of the X-\/axis at the trig point. \end{DoxyCompactList}\item 
+int \hyperlink{group___the_gae6037d203c4f05f5c74b1b99f1cb3525}{Trig\+\_\+Y} \mbox{[}\hyperlink{group___the_ga3572c6451d34aaf557cfb88ee365cf16}{Trig\+\_\+num}\mbox{]}
+\begin{DoxyCompactList}\small\item\em The coordinate of the Y-\/axis at the trig point. \end{DoxyCompactList}\item 
+int \hyperlink{group___the_ga526db8f9c8606f55d08698cbf664dbc5}{Trig\+\_\+regX} \mbox{[}\hyperlink{group___the_ga3572c6451d34aaf557cfb88ee365cf16}{Trig\+\_\+num}\mbox{]}
+\begin{DoxyCompactList}\small\item\em The coordinate of the X-\/axis at the trig range. \end{DoxyCompactList}\item 
+int \hyperlink{group___the_gac305426389277260c7adecf3a23172d6}{Trig\+\_\+regY} \mbox{[}\hyperlink{group___the_ga3572c6451d34aaf557cfb88ee365cf16}{Trig\+\_\+num}\mbox{]}
+\begin{DoxyCompactList}\small\item\em The coordinate of the Y-\/axis at the trig range. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_aea3bd854e4fa05d5a49aa7ea73422672}\label{class_mywebcam_1_1webcam_aea3bd854e4fa05d5a49aa7ea73422672}} 
+int \hyperlink{class_mywebcam_1_1webcam_aea3bd854e4fa05d5a49aa7ea73422672}{Effective} \mbox{[}\hyperlink{group___the_ga3572c6451d34aaf557cfb88ee365cf16}{Trig\+\_\+num}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Trig effective flag. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a600fe62ad1eb3b8242cb2ede9456ad99}\label{class_mywebcam_1_1webcam_a600fe62ad1eb3b8242cb2ede9456ad99}} 
+int($\ast$ \hyperlink{class_mywebcam_1_1webcam_a600fe62ad1eb3b8242cb2ede9456ad99}{Trig\+\_\+callfunc} \mbox{[}\hyperlink{group___the_ga3572c6451d34aaf557cfb88ee365cf16}{Trig\+\_\+num}\mbox{]})(void)
+\begin{DoxyCompactList}\small\item\em Contained trigger container. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a2bc41a9fdf9816b6e88350340bbdb967}\label{class_mywebcam_1_1webcam_a2bc41a9fdf9816b6e88350340bbdb967}} 
+Video\+Capture \hyperlink{class_mywebcam_1_1webcam_a2bc41a9fdf9816b6e88350340bbdb967}{capture}
+\begin{DoxyCompactList}\small\item\em Webcam body. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_af3752d85caf594423e13cd40821f31a7}\label{class_mywebcam_1_1webcam_af3752d85caf594423e13cd40821f31a7}} 
+U\+Mat \hyperlink{class_mywebcam_1_1webcam_af3752d85caf594423e13cd40821f31a7}{Parent\+\_\+frame}
+\begin{DoxyCompactList}\small\item\em Background picture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provide webcam function. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a90ece1aab671095ee01fa9c34fa4dbd7}\label{class_mywebcam_1_1webcam_a90ece1aab671095ee01fa9c34fa4dbd7}} 
+\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}!webcam@{webcam}}
+\index{webcam@{webcam}!Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+\subsubsection{\texorpdfstring{webcam()}{webcam()}}
+{\footnotesize\ttfamily Mywebcam\+::webcam\+::webcam (\begin{DoxyParamCaption}\item[{Video\+Capture}]{Ocapture,  }\item[{int}]{W\+I\+D\+TH,  }\item[{int}]{H\+E\+I\+G\+HT,  }\item[{int}]{F\+PS }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+webcam Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Ocapture} & Webcam body \\
+\hline
+{\em W\+I\+D\+TH} & Webcam width \\
+\hline
+{\em H\+E\+I\+G\+HT} & Webcam height \\
+\hline
+{\em F\+PS} & Webcam F\+PS \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a7a99d6f538b377e7af7021180bdfaef2}\label{class_mywebcam_1_1webcam_a7a99d6f538b377e7af7021180bdfaef2}} 
+\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}!Catch\+\_\+image@{Catch\+\_\+image}}
+\index{Catch\+\_\+image@{Catch\+\_\+image}!Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+\subsubsection{\texorpdfstring{Catch\+\_\+image()}{Catch\_image()}}
+{\footnotesize\ttfamily U\+Mat Mywebcam\+::webcam\+::\+Catch\+\_\+image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get image from webcam. 
+
+\begin{DoxyReturn}{Returns}
+image 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a243224bf66ec95731a81bffc52fc00c3}\label{class_mywebcam_1_1webcam_a243224bf66ec95731a81bffc52fc00c3}} 
+\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}!Trig\+\_\+\+Color@{Trig\+\_\+\+Color}}
+\index{Trig\+\_\+\+Color@{Trig\+\_\+\+Color}!Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+\subsubsection{\texorpdfstring{Trig\+\_\+\+Color()}{Trig\_Color()}}
+{\footnotesize\ttfamily int Mywebcam\+::webcam\+::\+Trig\+\_\+\+Color (\begin{DoxyParamCaption}\item[{cv\+::\+Point}]{left\+\_\+top,  }\item[{cv\+::\+Point}]{right\+\_\+down }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Trig function using color condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left\+\_\+top} & Point at upper left \\
+\hline
+{\em right\+\_\+down} & Trig range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+i\+: The i th trigger area is triggered 
+
+0\+: Not Trig 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a64834e308d75f64bcb4b833d415782d2}\label{class_mywebcam_1_1webcam_a64834e308d75f64bcb4b833d415782d2}} 
+\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}!Trig\+\_\+\+Create@{Trig\+\_\+\+Create}}
+\index{Trig\+\_\+\+Create@{Trig\+\_\+\+Create}!Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+\subsubsection{\texorpdfstring{Trig\+\_\+\+Create()}{Trig\_Create()}}
+{\footnotesize\ttfamily int Mywebcam\+::webcam\+::\+Trig\+\_\+\+Create (\begin{DoxyParamCaption}\item[{int}]{O\+Trig\+\_\+X,  }\item[{int}]{O\+Trig\+\_\+Y,  }\item[{int}]{O\+Trig\+\_\+regX,  }\item[{int}]{O\+Trig\+\_\+regY,  }\item[{int}]{prior1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Create Trig point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em O\+Trig\+\_\+X} & The coordinate of the X-\/axis at the start point \\
+\hline
+{\em O\+Trig\+\_\+Y} & The coordinate of the Y-\/axis at the start point \\
+\hline
+{\em O\+Trig\+\_\+regX} & The coordinate of the X-\/axis at the trig range \\
+\hline
+{\em O\+Trig\+\_\+regX} & The coordinate of the Y-\/axis at the trig range \\
+\hline
+{\em prior1} & Trigger priority \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\+: successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a2b213536b45a13d4abd8d34b0c19535c}\label{class_mywebcam_1_1webcam_a2b213536b45a13d4abd8d34b0c19535c}} 
+\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}!Trig\+\_\+\+Del@{Trig\+\_\+\+Del}}
+\index{Trig\+\_\+\+Del@{Trig\+\_\+\+Del}!Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+\subsubsection{\texorpdfstring{Trig\+\_\+\+Del()}{Trig\_Del()}}
+{\footnotesize\ttfamily int Mywebcam\+::webcam\+::\+Trig\+\_\+\+Del (\begin{DoxyParamCaption}\item[{int}]{prior1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Delete Trig point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prior1} & Trigger priority \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\+: successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a8c3bece8802fa58e8de968bc65a36fd1}\label{class_mywebcam_1_1webcam_a8c3bece8802fa58e8de968bc65a36fd1}} 
+\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}!Trig\+\_\+func@{Trig\+\_\+func}}
+\index{Trig\+\_\+func@{Trig\+\_\+func}!Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+\subsubsection{\texorpdfstring{Trig\+\_\+func()}{Trig\_func()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Mywebcam\+::webcam\+::\+Trig\+\_\+func (\begin{DoxyParamCaption}\item[{cv\+::\+Point}]{left\+\_\+top,  }\item[{cv\+::\+Point}]{right\+\_\+down }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Trig function using background subtraction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left\+\_\+top} & Point at upper left \\
+\hline
+{\em right\+\_\+down} & Trig range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1\+: Trig 
+
+0\+: Not Trig 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_aa47dab3d4fb51217bd09150adedbfc27}\label{class_mywebcam_1_1webcam_aa47dab3d4fb51217bd09150adedbfc27}} 
+\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}!Trig\+\_\+func@{Trig\+\_\+func}}
+\index{Trig\+\_\+func@{Trig\+\_\+func}!Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+\subsubsection{\texorpdfstring{Trig\+\_\+func()}{Trig\_func()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Mywebcam\+::webcam\+::\+Trig\+\_\+func (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Trig function using background subtraction. 
+
+\begin{DoxyReturn}{Returns}
+i\+: The i th trigger area is triggered 
+
+0\+: Not Trig 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a66af4250efce2c454bcd9dee3a268f47}\label{class_mywebcam_1_1webcam_a66af4250efce2c454bcd9dee3a268f47}} 
+\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}!Trig\+\_\+func1@{Trig\+\_\+func1}}
+\index{Trig\+\_\+func1@{Trig\+\_\+func1}!Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+\subsubsection{\texorpdfstring{Trig\+\_\+func1()}{Trig\_func1()}}
+{\footnotesize\ttfamily int Mywebcam\+::webcam\+::\+Trig\+\_\+func1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Trig function using color condition. 
+
+\begin{DoxyReturn}{Returns}
+i\+: The i th trigger area is triggered 
+
+0\+: Not Trig 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a0cde3310fc2cc39b390816a7d95a6cb5}\label{class_mywebcam_1_1webcam_a0cde3310fc2cc39b390816a7d95a6cb5}} 
+\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}!Trig\+\_\+hide@{Trig\+\_\+hide}}
+\index{Trig\+\_\+hide@{Trig\+\_\+hide}!Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+\subsubsection{\texorpdfstring{Trig\+\_\+hide()}{Trig\_hide()}}
+{\footnotesize\ttfamily int Mywebcam\+::webcam\+::\+Trig\+\_\+hide (\begin{DoxyParamCaption}\item[{int}]{prior1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Hide Trig point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prior1} & Trigger priority \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\+: successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a7e205a9aa849cab1cb47513cdd46a02b}\label{class_mywebcam_1_1webcam_a7e205a9aa849cab1cb47513cdd46a02b}} 
+\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}!Trig\+\_\+param@{Trig\+\_\+param}}
+\index{Trig\+\_\+param@{Trig\+\_\+param}!Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+\subsubsection{\texorpdfstring{Trig\+\_\+param()}{Trig\_param()}}
+{\footnotesize\ttfamily int Mywebcam\+::webcam\+::\+Trig\+\_\+param (\begin{DoxyParamCaption}\item[{int}]{o\+Trig\+\_\+\+Percent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Trig param try. 
+
+\begin{DoxyReturn}{Returns}
+0\+: successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a64f03adb86a05d550cf238c8beb22b1e}\label{class_mywebcam_1_1webcam_a64f03adb86a05d550cf238c8beb22b1e}} 
+\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}!Trig\+\_\+\+Restore@{Trig\+\_\+\+Restore}}
+\index{Trig\+\_\+\+Restore@{Trig\+\_\+\+Restore}!Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+\subsubsection{\texorpdfstring{Trig\+\_\+\+Restore()}{Trig\_Restore()}}
+{\footnotesize\ttfamily int Mywebcam\+::webcam\+::\+Trig\+\_\+\+Restore (\begin{DoxyParamCaption}\item[{int}]{prior1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Restore Trig point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prior1} & Trigger priority \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\+: successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mywebcam_1_1webcam_a331edce2952af5995420c1ace205317c}\label{class_mywebcam_1_1webcam_a331edce2952af5995420c1ace205317c}} 
+\index{Mywebcam\+::webcam@{Mywebcam\+::webcam}!webcam\+\_\+\+Trig\+\_\+init@{webcam\+\_\+\+Trig\+\_\+init}}
+\index{webcam\+\_\+\+Trig\+\_\+init@{webcam\+\_\+\+Trig\+\_\+init}!Mywebcam\+::webcam@{Mywebcam\+::webcam}}
+\subsubsection{\texorpdfstring{webcam\+\_\+\+Trig\+\_\+init()}{webcam\_Trig\_init()}}
+{\footnotesize\ttfamily int Mywebcam\+::webcam\+::webcam\+\_\+\+Trig\+\_\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Catch background picture into Parent\+\_\+frame. 
+
+\begin{DoxyReturn}{Returns}
+0\+: successfully 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+core.\+h\end{DoxyCompactItemize}

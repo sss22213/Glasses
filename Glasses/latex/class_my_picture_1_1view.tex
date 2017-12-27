@@ -1,0 +1,235 @@
+\hypertarget{class_my_picture_1_1view}{}\section{My\+Picture\+:\+:view Class Reference}
+\label{class_my_picture_1_1view}\index{My\+Picture\+::view@{My\+Picture\+::view}}
+
+
+Display, plot into window.  
+
+
+
+
+{\ttfamily \#include $<$Picture.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_my_picture_1_1view_ad50c4a8c0a51930e7ddd9e4f78d8e897}{view} (\hyperlink{class_my_picture_1_1_picture}{Picture} $\ast$Inputbackground, \hyperlink{class_my_picture_1_1_my_picture_box}{My\+Picture\+Box} $\ast$Input\+Pic\+Box)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_my_picture_1_1_my_picture_box}{My\+Picture\+Box} Constructor. \end{DoxyCompactList}\item 
+H\+R\+E\+S\+U\+LT \hyperlink{class_my_picture_1_1view_ad01222e69e6bb7503487d29bfd8e51d1}{Image\+\_\+puts} ()
+\begin{DoxyCompactList}\small\item\em Put picture into Canvas. \end{DoxyCompactList}\item 
+H\+R\+E\+S\+U\+LT \hyperlink{class_my_picture_1_1view_ac7a95d5487774a020d48e6abe2af8df6}{Image\+\_\+\+Move} (\hyperlink{class_my_picture_1_1_picture}{Picture} $\ast$Input\+Pic, int offset, int direction=1)
+\begin{DoxyCompactList}\small\item\em Move picture position from Canvas. \end{DoxyCompactList}\item 
+H\+R\+E\+S\+U\+LT \hyperlink{class_my_picture_1_1view_a395603d388ba365f70494e9716553ffa}{Plot\+\_\+\+Line} (int x1, int x2, int y1, int y2, const Scalar \&color=(B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+B\+L\+UE$\vert$B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+N\+S\+I\+TY), int thickness=12)
+\begin{DoxyCompactList}\small\item\em Plot Line into Canvas. \end{DoxyCompactList}\item 
+H\+R\+E\+S\+U\+LT \hyperlink{class_my_picture_1_1view_a35a3dab7201ed1c83794af6d203a5f8f}{Plot\+\_\+\+Circle} (int x, int y, int radius, const Scalar \&color=(B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+B\+L\+UE$\vert$B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+N\+S\+I\+TY), int thickness=10)
+\begin{DoxyCompactList}\small\item\em Plot circle into Canvas. \end{DoxyCompactList}\item 
+H\+R\+E\+S\+U\+LT \hyperlink{class_my_picture_1_1view_a91f7b33a68055cd087d1ed87e0ab09b8}{Plot\+\_\+\+Text} (int x, int y, const string \&textint, double font\+Scale=4, int font\+Face=F\+O\+N\+T\+\_\+\+H\+E\+R\+S\+H\+E\+Y\+\_\+\+C\+O\+M\+P\+L\+EX, const Scalar \&color=(B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+B\+L\+UE$\vert$B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+I\+N\+T\+E\+N\+S\+I\+TY), int thickness=10)
+\begin{DoxyCompactList}\small\item\em Plot Text into Canvas. \end{DoxyCompactList}\item 
+H\+R\+E\+S\+U\+LT \hyperlink{class_my_picture_1_1view_afb8d800dbc874b4850193e6589320117}{plot\+\_\+\+Two\+\_\+\+Joint} (vector$<$ cv\+::\+Point $>$ track, int Line\+\_\+weight)
+\begin{DoxyCompactList}\small\item\em Plot track into Canvas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_my_picture_1_1view_a3054488f7702b7f9687d841ac9e88fcd}\label{class_my_picture_1_1view_a3054488f7702b7f9687d841ac9e88fcd}} 
+H\+R\+E\+S\+U\+LT {\bfseries plot\+\_\+\+Rectangle} (cv\+::\+Point $\ast$pt1, int Line\+\_\+weight=20)
+\item 
+\mbox{\Hypertarget{class_my_picture_1_1view_a99eb721afd54693ed9c1378cf3ac9521}\label{class_my_picture_1_1view_a99eb721afd54693ed9c1378cf3ac9521}} 
+H\+R\+E\+S\+U\+LT {\bfseries plot\+\_\+\+Rectangle} (cv\+::\+Point pt1, cv\+::\+Point pt2, int Line\+\_\+weight=20)
+\item 
+\mbox{\Hypertarget{class_my_picture_1_1view_abcc54355c4e00612cc71453b8aa3bd3b}\label{class_my_picture_1_1view_abcc54355c4e00612cc71453b8aa3bd3b}} 
+H\+R\+E\+S\+U\+LT {\bfseries plot\+\_\+\+Rectangle} (int x1, int x2, int y1, int y2, int Line\+\_\+weight=20)
+\item 
+\hyperlink{class_my_picture_1_1_picture}{Picture} $\ast$ \hyperlink{class_my_picture_1_1view_a64a48e69a874d48cde28c7f28334f8d7}{Get\+\_\+background} ()
+\begin{DoxyCompactList}\small\item\em Get background from Canvas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_my_picture_1_1view_a0ff0775584b6717c2f34308a3a360bcf}\label{class_my_picture_1_1view_a0ff0775584b6717c2f34308a3a360bcf}} 
+\hyperlink{class_my_picture_1_1_my_picture_box}{My\+Picture\+Box} $\ast$ {\bfseries Pic\+Box}
+\item 
+\mbox{\Hypertarget{class_my_picture_1_1view_a208384aaf7ede4f08c6e443b5c982c80}\label{class_my_picture_1_1view_a208384aaf7ede4f08c6e443b5c982c80}} 
+\hyperlink{class_my_picture_1_1_picture}{Picture} $\ast$ {\bfseries background}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Display, plot into window. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_my_picture_1_1view_ad50c4a8c0a51930e7ddd9e4f78d8e897}\label{class_my_picture_1_1view_ad50c4a8c0a51930e7ddd9e4f78d8e897}} 
+\index{My\+Picture\+::view@{My\+Picture\+::view}!view@{view}}
+\index{view@{view}!My\+Picture\+::view@{My\+Picture\+::view}}
+\subsubsection{\texorpdfstring{view()}{view()}}
+{\footnotesize\ttfamily My\+Picture\+::view\+::view (\begin{DoxyParamCaption}\item[{\hyperlink{class_my_picture_1_1_picture}{Picture} $\ast$}]{Inputbackground,  }\item[{\hyperlink{class_my_picture_1_1_my_picture_box}{My\+Picture\+Box} $\ast$}]{Input\+Pic\+Box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\hyperlink{class_my_picture_1_1_my_picture_box}{My\+Picture\+Box} Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Inputbackground} & Canvas background \\
+\hline
+{\em Input\+Pic\+Box} & \hyperlink{class_my_picture_1_1_picture}{Picture} box of put \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_my_picture_1_1view_a64a48e69a874d48cde28c7f28334f8d7}\label{class_my_picture_1_1view_a64a48e69a874d48cde28c7f28334f8d7}} 
+\index{My\+Picture\+::view@{My\+Picture\+::view}!Get\+\_\+background@{Get\+\_\+background}}
+\index{Get\+\_\+background@{Get\+\_\+background}!My\+Picture\+::view@{My\+Picture\+::view}}
+\subsubsection{\texorpdfstring{Get\+\_\+background()}{Get\_background()}}
+{\footnotesize\ttfamily \hyperlink{class_my_picture_1_1_picture}{Picture}$\ast$ My\+Picture\+::view\+::\+Get\+\_\+background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get background from Canvas. 
+
+\begin{DoxyReturn}{Returns}
+Background 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_my_picture_1_1view_ac7a95d5487774a020d48e6abe2af8df6}\label{class_my_picture_1_1view_ac7a95d5487774a020d48e6abe2af8df6}} 
+\index{My\+Picture\+::view@{My\+Picture\+::view}!Image\+\_\+\+Move@{Image\+\_\+\+Move}}
+\index{Image\+\_\+\+Move@{Image\+\_\+\+Move}!My\+Picture\+::view@{My\+Picture\+::view}}
+\subsubsection{\texorpdfstring{Image\+\_\+\+Move()}{Image\_Move()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT My\+Picture\+::view\+::\+Image\+\_\+\+Move (\begin{DoxyParamCaption}\item[{\hyperlink{class_my_picture_1_1_picture}{Picture} $\ast$}]{Input\+Pic,  }\item[{int}]{offset,  }\item[{int}]{direction = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Move picture position from Canvas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Input\+Pic} & picture object \\
+\hline
+{\em offset} & Move distance \\
+\hline
+{\em direction} & 1(Move horizontally),0(Move vertically) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+\_\+\+OK\+: successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_my_picture_1_1view_ad01222e69e6bb7503487d29bfd8e51d1}\label{class_my_picture_1_1view_ad01222e69e6bb7503487d29bfd8e51d1}} 
+\index{My\+Picture\+::view@{My\+Picture\+::view}!Image\+\_\+puts@{Image\+\_\+puts}}
+\index{Image\+\_\+puts@{Image\+\_\+puts}!My\+Picture\+::view@{My\+Picture\+::view}}
+\subsubsection{\texorpdfstring{Image\+\_\+puts()}{Image\_puts()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT My\+Picture\+::view\+::\+Image\+\_\+puts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Put picture into Canvas. 
+
+\begin{DoxyReturn}{Returns}
+S\+\_\+\+OK\+: successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_my_picture_1_1view_a35a3dab7201ed1c83794af6d203a5f8f}\label{class_my_picture_1_1view_a35a3dab7201ed1c83794af6d203a5f8f}} 
+\index{My\+Picture\+::view@{My\+Picture\+::view}!Plot\+\_\+\+Circle@{Plot\+\_\+\+Circle}}
+\index{Plot\+\_\+\+Circle@{Plot\+\_\+\+Circle}!My\+Picture\+::view@{My\+Picture\+::view}}
+\subsubsection{\texorpdfstring{Plot\+\_\+\+Circle()}{Plot\_Circle()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT My\+Picture\+::view\+::\+Plot\+\_\+\+Circle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{radius,  }\item[{const Scalar \&}]{color = {\ttfamily (BACKGROUND\+\_\+BLUE~$\vert$~BACKGROUND\+\_\+INTENSITY)},  }\item[{int}]{thickness = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plot circle into Canvas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The coordinate of the X-\/axis at the start point \\
+\hline
+{\em y} & The coordinate of the Y-\/axis at the start point \\
+\hline
+{\em radius} & Circule radius \\
+\hline
+{\em color} & B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+B\+L\+U\+E(\+Blue) \\
+\hline
+{\em thickness} & Line width \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+\_\+\+OK\+: successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_my_picture_1_1view_a395603d388ba365f70494e9716553ffa}\label{class_my_picture_1_1view_a395603d388ba365f70494e9716553ffa}} 
+\index{My\+Picture\+::view@{My\+Picture\+::view}!Plot\+\_\+\+Line@{Plot\+\_\+\+Line}}
+\index{Plot\+\_\+\+Line@{Plot\+\_\+\+Line}!My\+Picture\+::view@{My\+Picture\+::view}}
+\subsubsection{\texorpdfstring{Plot\+\_\+\+Line()}{Plot\_Line()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT My\+Picture\+::view\+::\+Plot\+\_\+\+Line (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{x2,  }\item[{int}]{y1,  }\item[{int}]{y2,  }\item[{const Scalar \&}]{color = {\ttfamily (BACKGROUND\+\_\+BLUE~$\vert$~BACKGROUND\+\_\+INTENSITY)},  }\item[{int}]{thickness = {\ttfamily 12} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plot Line into Canvas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & The coordinate of the X-\/axis at the start point \\
+\hline
+{\em x2} & The coordinate of the Y-\/axis at the start point \\
+\hline
+{\em y1} & The coordinate of the X-\/axis at the end point \\
+\hline
+{\em y2} & The coordinate of the Y-\/axis at the end point \\
+\hline
+{\em color} & B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+B\+L\+U\+E(\+Blue) \\
+\hline
+{\em thickness} & Line width \\
+\hline
+{\em direction} & 1(Move horizontally),0(Move vertically) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+\_\+\+OK\+: successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_my_picture_1_1view_a91f7b33a68055cd087d1ed87e0ab09b8}\label{class_my_picture_1_1view_a91f7b33a68055cd087d1ed87e0ab09b8}} 
+\index{My\+Picture\+::view@{My\+Picture\+::view}!Plot\+\_\+\+Text@{Plot\+\_\+\+Text}}
+\index{Plot\+\_\+\+Text@{Plot\+\_\+\+Text}!My\+Picture\+::view@{My\+Picture\+::view}}
+\subsubsection{\texorpdfstring{Plot\+\_\+\+Text()}{Plot\_Text()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT My\+Picture\+::view\+::\+Plot\+\_\+\+Text (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const string \&}]{textint,  }\item[{double}]{font\+Scale = {\ttfamily 4},  }\item[{int}]{font\+Face = {\ttfamily FONT\+\_\+HERSHEY\+\_\+COMPLEX},  }\item[{const Scalar \&}]{color = {\ttfamily (BACKGROUND\+\_\+BLUE~$\vert$~BACKGROUND\+\_\+INTENSITY)},  }\item[{int}]{thickness = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plot Text into Canvas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The coordinate of the X-\/axis at the start point \\
+\hline
+{\em y} & The coordinate of the Y-\/axis at the start point \\
+\hline
+{\em textint} & Text body \\
+\hline
+{\em font\+Scale} & Font style \\
+\hline
+{\em font\+Face} & font size \\
+\hline
+{\em color} & B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+B\+L\+U\+E(\+Blue) \\
+\hline
+{\em thickness} & Text width \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+\_\+\+OK\+: successfully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_my_picture_1_1view_afb8d800dbc874b4850193e6589320117}\label{class_my_picture_1_1view_afb8d800dbc874b4850193e6589320117}} 
+\index{My\+Picture\+::view@{My\+Picture\+::view}!plot\+\_\+\+Two\+\_\+\+Joint@{plot\+\_\+\+Two\+\_\+\+Joint}}
+\index{plot\+\_\+\+Two\+\_\+\+Joint@{plot\+\_\+\+Two\+\_\+\+Joint}!My\+Picture\+::view@{My\+Picture\+::view}}
+\subsubsection{\texorpdfstring{plot\+\_\+\+Two\+\_\+\+Joint()}{plot\_Two\_Joint()}}
+{\footnotesize\ttfamily H\+R\+E\+S\+U\+LT My\+Picture\+::view\+::plot\+\_\+\+Two\+\_\+\+Joint (\begin{DoxyParamCaption}\item[{vector$<$ cv\+::\+Point $>$}]{track,  }\item[{int}]{Line\+\_\+weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plot track into Canvas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em track} & Point of track \\
+\hline
+{\em Line\+\_\+weight} & Line width \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+\_\+\+OK\+: successfully 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Picture.\+h\end{DoxyCompactItemize}
