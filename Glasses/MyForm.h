@@ -42,11 +42,12 @@ namespace Glasses {
 	public: view *View1;
 	public:	MyPictureBox *Box1;
 	private: System::ComponentModel::BackgroundWorker^  backgroundWorker2;
-	private: System::Windows::Forms::Button^  button3;
-	private: System::Windows::Forms::TextBox^  textBox1;
-	private: System::Windows::Forms::TextBox^  textBox2;
-	private: System::Windows::Forms::Label^  label2;
-	private: System::Windows::Forms::Label^  label3;
+
+
+
+
+
+
 	public:
 	public: cv::Point *pps;
 		MyForm(void)
@@ -97,11 +98,6 @@ namespace Glasses {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->timer2 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->backgroundWorker2 = (gcnew System::ComponentModel::BackgroundWorker());
-			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// timer1
@@ -114,7 +110,7 @@ namespace Glasses {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(12, 149);
+			this->button1->Location = System::Drawing::Point(3, 375);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(142, 109);
 			this->button1->TabIndex = 0;
@@ -124,7 +120,7 @@ namespace Glasses {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(371, 149);
+			this->button2->Location = System::Drawing::Point(377, 375);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(142, 109);
 			this->button2->TabIndex = 1;
@@ -137,7 +133,7 @@ namespace Glasses {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"PMingLiU", 48, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(136)));
-			this->label1->Location = System::Drawing::Point(177, 55);
+			this->label1->Location = System::Drawing::Point(182, 209);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(156, 64);
 			this->label1->TabIndex = 2;
@@ -152,70 +148,11 @@ namespace Glasses {
 			// 
 			this->backgroundWorker2->DoWork += gcnew System::ComponentModel::DoWorkEventHandler(this, &MyForm::backgroundWorker2_DoWork);
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(212, 410);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(109, 73);
-			this->button3->TabIndex = 3;
-			this->button3->Text = L"自動偵測";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
-			// 
-			// textBox1
-			// 
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"PMingLiU", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(136)));
-			this->textBox1->Location = System::Drawing::Point(235, 307);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(61, 33);
-			this->textBox1->TabIndex = 4;
-			this->textBox1->Text = L"200";
-			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox1_TextChanged_1);
-			// 
-			// textBox2
-			// 
-			this->textBox2->Font = (gcnew System::Drawing::Font(L"PMingLiU", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(136)));
-			this->textBox2->Location = System::Drawing::Point(235, 355);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(61, 33);
-			this->textBox2->TabIndex = 5;
-			this->textBox2->Text = L"0.5";
-			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"PMingLiU", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(136)));
-			this->label2->Location = System::Drawing::Point(128, 310);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(83, 21);
-			this->label2->TabIndex = 6;
-			this->label2->Text = L"門檻值: ";
-			this->label2->Click += gcnew System::EventHandler(this, &MyForm::label2_Click);
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"PMingLiU", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(136)));
-			this->label3->Location = System::Drawing::Point(112, 358);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(99, 21);
-			this->label3->TabIndex = 7;
-			this->label3->Text = L"觸發比例;";
-			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 12);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(531, 496);
-			this->Controls->Add(this->label3);
-			this->Controls->Add(this->label2);
-			this->Controls->Add(this->textBox2);
-			this->Controls->Add(this->textBox1);
-			this->Controls->Add(this->button3);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
@@ -258,7 +195,7 @@ namespace Glasses {
 		P3->Add_Position(P2->pic_boarder_x[0][1], (P2->pic_boarder_y[0][1] + P2->pic_boarder_y[1][1]) / 2);
 		Box1->MyPictureBox_put(P3);
 		//Update trig percent data 
-		textBox1->Text = Convert::ToString(Mywebcam::threshold_num);
+		//textBox1->Text = Convert::ToString(Mywebcam::threshold_num);
 		
 		//Init System Time(10 ms)
 		this->Trig_count = 0;
@@ -302,7 +239,7 @@ private: System::Void backgroundWorker2_DoWork(System::Object^  sender, System::
 		//Read trig param (Mywebcam::Trig_Percent,Mywebcam::threshold_num)
 		//Mywebcam::threshold_num = Convert::ToInt32(textBox1->Text);
 		//Mywebcam::Trig_Percent = Convert::ToInt32(textBox2->Text);
-		Mywebcam::threshold_num = 100;
+		//Mywebcam::threshold_num = 100;
 		//Access to Platform
 		Webcam->webcam_Trig_init();
 		//Effective Range
@@ -422,7 +359,7 @@ private: System::Void textBox1_TextChanged_1(System::Object^  sender, System::Ev
 }
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
 		label1->Text = "調整參數中";
-		textBox1->Text = Convert::ToString(Webcam->Trig_param(Convert::ToInt32(Mywebcam::Trig_Percent)));
+		//textBox1->Text = Convert::ToString(Webcam->Trig_param(Convert::ToInt32(Mywebcam::Trig_Percent)));
 		label1->Text = "就緒";
 }
 };

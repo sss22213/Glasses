@@ -366,5 +366,34 @@ namespace Mywebcam
 			if (Sum_pixel / ((float)(range.x) * (float)(range.y) * 255.0 * 3.0) >0.1)return 1;
 			else return 0;
 		}
+		/** @brief	Trig function using color condition (All screen version)
+		*	@param	left_top: Point at upper left
+		*	@param	range: Trig range
+		*	@return	i: The i th trigger area is triggered
+		*	@return 0: Not Trig
+		*/
+		int Trig_all_color(cv::Point left_top, cv::Point range)
+		{
+			//update webcam picture
+			UMat update_frame;
+			UMat imageROI0;
+			UMat imageROI1;
+			UMat hsv;
+			UMat b; //各顏色的閥值
+			capture >> update_frame;
+			imageROI1 = update_frame(Rect(left_top.x, left_top.y, range.x, range.y));
+			UMat mask = UMat::zeros(imageROI1.rows, imageROI1.cols, CV_8U); //為了濾掉其他顏色
+			cvtColor(imageROI1, hsv, CV_BGR2HSV);
+			//Skin color
+			inRange(hsv, Scalar(0, 58, 20), Scalar(50, 173, 230), b);
+			double Sum_pixel = 0;
+			for (unsigned char i = 0; i < 3; i++)Sum_pixel += sum(b)[i];
+#ifdef debug
+			cout << Sum_pixel / ((float)(range.x - left_top.x) * (float)(range.y - left_top.y) * 255.0 * 3.0) << endl;
+#endif
+			//return Sum_pixel;
+			if (Sum_pixel / ((float)(range.x) * (float)(range.y) * 255.0 * 3.0) >0.1)return 1;
+			else return 0;
+		}
 	};
 }
