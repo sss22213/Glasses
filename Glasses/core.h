@@ -8,6 +8,9 @@
 #include <vector>
 #include "C:\\Webcam_AR\\opencv\\include\\opencv2\\core\\cuda.hpp"
 #include <array>
+#ifndef debug
+#define debug
+#endif
 using namespace std;
 using namespace cv;
 using namespace System;
@@ -26,7 +29,7 @@ namespace Mywebcam
 	/** @brief Trig percent */
 	float Trig_Percent = 0.5;
 	/** @brief Trig threshold */
-	int threshold_num=1000;
+	int threshold_num=200;
 	/** @} */
 
 /** @brief Provide webcam function
@@ -165,7 +168,6 @@ namespace Mywebcam
 				//NON black Percentage
 				if (Sum_pixel / ((float)right_down.x * (float)right_down.y * 255.0 * 3.0) < Trig_Percent)move_flag = 0;
 				threshold_tweak -=5;
-				cout << threshold_tweak << endl;
 				if (threshold_tweak < 50)return -1;
 				cv::waitKey(30);
 			}
@@ -204,6 +206,25 @@ namespace Mywebcam
 
 			this->Effective[prior1] = -1;
 			return 0;
+		}
+		/** @brief	Trig function using background subtraction
+		*	@param	left_top: Point at upper left
+		*	@param	right_down: Trig range
+		*	@return	1: Trig
+		*	@return 0: Not Trig
+		*/
+		UMat Trig_func_all(int width,int height)
+		{
+			//update webcam picture
+			UMat update_frame;
+			UMat imageROI0;
+			UMat imageROI1;
+			capture >> update_frame;
+			threshold(update_frame, Parent_frame, threshold_num, 255, THRESH_BINARY_INV);
+			return Parent_frame;
+			//double Sum_pixel = 0;
+			//for (int i = 0; i < 3; i++)Sum_pixel += sum(imageROI0)[i];
+			//if (Sum_pixel / ((float)range_x * (float)range_y * 255.0 * 3.0) > Trig_Percent);
 		}
 		/** @brief	Trig function using background subtraction 
 		*	@param	left_top: Point at upper left
@@ -318,11 +339,11 @@ namespace Mywebcam
 		}
 		/** @brief	Trig function using color condition
 		*	@param	left_top: Point at upper left
-		*	@param	right_down: Trig range
+		*	@param	range: Trig range
 		*	@return	i: The i th trigger area is triggered
 		*	@return 0: Not Trig
 		*/
-		int Trig_Color(cv::Point left_top, cv::Point right_down)
+		int Trig_Color(cv::Point left_top, cv::Point range)
 		{
 			//update webcam picture
 			UMat update_frame;
@@ -331,15 +352,19 @@ namespace Mywebcam
 			UMat hsv;
 			UMat b; //各顏色的閥值
 			capture >> update_frame;
-			imageROI1 = update_frame(Rect(left_top.x, left_top.y, right_down.x, right_down.y));
+			imageROI1 = update_frame(Rect(left_top.x, left_top.y, range.x, range.y));
 			UMat mask = UMat::zeros(imageROI1.rows, imageROI1.cols, CV_8U); //為了濾掉其他顏色
 			cvtColor(imageROI1, hsv, CV_BGR2HSV);
-			inRange(hsv, Scalar(90, 100, 0), Scalar(130, 255, 255), b);
+			//Skin color
+			inRange(hsv, Scalar(0, 58, 20), Scalar(50, 173, 230), b);
 			double Sum_pixel = 0;
 			for (unsigned char i = 0; i < 3; i++)Sum_pixel += sum(b)[i];
+#ifdef debug
+			cout << Sum_pixel / ((float)(range.x - left_top.x) * (float)(range.y - left_top.y) * 255.0 * 3.0) << endl;
+#endif
 			//return Sum_pixel;
-			if (Sum_pixel / ((float)(right_down.x- left_top.x) * (float)(right_down.y- left_top.y) * 255.0 * 3.0) > 0.015)return 1;
-			return 0;
+			if (Sum_pixel / ((float)(range.x) * (float)(range.y) * 255.0 * 3.0) >0.1)return 1;
+			else return 0;
 		}
 	};
 }

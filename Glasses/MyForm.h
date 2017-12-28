@@ -284,7 +284,6 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 	
 		while (backgroundWorker2->IsBusy);
 		backgroundWorker2->RunWorkerAsync();
-	//backgroundWorker1->RunWorkerAsync();
 		while (1)
 		{
 			Color_background->Change_Mat(Webcam->Catch_image());
@@ -301,8 +300,9 @@ private: System::Void timer2_Tick(System::Object^  sender, System::EventArgs^  e
 }
 private: System::Void backgroundWorker2_DoWork(System::Object^  sender, System::ComponentModel::DoWorkEventArgs^  e) {
 		//Read trig param (Mywebcam::Trig_Percent,Mywebcam::threshold_num)
-		Webcam->Trig_param(Convert::ToInt32(textBox1->Text));
-		Mywebcam::Trig_Percent = Convert::ToInt32(textBox2->Text);
+		//Mywebcam::threshold_num = Convert::ToInt32(textBox1->Text);
+		//Mywebcam::Trig_Percent = Convert::ToInt32(textBox2->Text);
+		Mywebcam::threshold_num = 100;
 		//Access to Platform
 		Webcam->webcam_Trig_init();
 		//Effective Range
@@ -341,7 +341,7 @@ private: System::Void backgroundWorker2_DoWork(System::Object^  sender, System::
 		while (1)
 		{
 			//Trig Effective
-			if (Webcam->Trig_func(pp1, pp2))
+			if (Webcam->Trig_Color(pp1, pp2))
 			{
 				//unlock Initial flag
 				int init_flag = 1;
